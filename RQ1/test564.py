@@ -1,12 +1,6 @@
-def test_single_digit():
-    # Edge case: single-digit number
-    assert code564("5") == "5"
-
-def test_odd_digits_palindrome():
-    # Odd digits palindrome
-    assert code564("123") == "121"
-
-
-def test_even_digits_palindrome():
-    # Even digits palindrome
-    assert code564("1234") == "1221"
+# Test Case 1
+assert code564("123") == "121"
+# Test Case 2
+assert code564("1234") == "1221"
+# Test Case 3
+assert code564("12345") == "12321"
