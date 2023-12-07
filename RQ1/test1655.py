@@ -12,3 +12,8 @@ def test_4(self):
 
 def test_5(self):
         self.assertTrue(self.solution.code([1, 1, 2, 2], [2, 2]))
+def test_6(self):
+        self.assertFalse(self.solution.code([1, 2, 3, 4], [2]))
+
+def test_7(self):
+        self.assertFalse(self.solution.code([1, 2, 3, 4], [2]))

@@ -10,3 +10,7 @@ def test_all_unique_words():
     s = "barfoothefoobarman"
     words = ["foo", "bar", "baz"]
     assert code30(s, words) == []
+def test_4():
+    s = "wordgoodgoodgoodbestword"
+    words = ["word", "good", "best", "word"]
+    assert code30(s, words) == []

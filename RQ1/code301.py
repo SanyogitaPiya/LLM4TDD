@@ -1,33 +1,35 @@
-from typing import List
-
 def code301(s: str) -> List[str]:
-    def is_valid(s: str) -> bool:
+    def is_valid(expression):
         count = 0
-        for char in s:
+        for char in expression:
             if char == '(':
                 count += 1
             elif char == ')':
                 count -= 1
-            if count < 0:
-                return False
+                if count < 0:
+                    return False
         return count == 0
 
-    def backtrack(current: str, index: int, left_count: int, right_count: int, result: List[str]):
-        if index == len(s):
-            if left_count == right_count and is_valid(current):
-                result.append(current)
-            return
-
-        if s[index] not in {'(', ')'}:
-            backtrack(current + s[index], index + 1, left_count, right_count, result)
-        else:
-            backtrack(current, index + 1, left_count, right_count, result)
-            if s[index] == '(':
-                backtrack(current + s[index], index + 1, left_count + 1, right_count, result)
-            elif s[index] == ')' and left_count > right_count:
-                backtrack(current + s[index], index + 1, left_count, right_count + 1, result)
-
     result = []
-    backtrack("", 0, 0, 0, result)
-    return result
+    visited = set()
+    queue = deque([s])
+    found = False
 
+    while queue:
+        current_expression = queue.popleft()
+
+        if is_valid(current_expression):
+            result.append(current_expression)
+            found = True
+
+        if found:
+            continue
+
+        for i in range(len(current_expression)):
+            if current_expression[i] in {'(', ')'}:
+                new_expression = current_expression[:i] + current_expression[i + 1:]
+                if new_expression not in visited:
+                    visited.add(new_expression)
+                    queue.append(new_expression)
+
+    return result

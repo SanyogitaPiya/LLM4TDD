@@ -1,18 +1,21 @@
 def code1805(word: str) -> int:
-    count = 0
-    seen_integers = set()
-
+    # Initialize a set to keep track of unique numeric substrings
+    unique_numbers = set()
+    
+    # Iterate through the characters of the input string
     i = 0
     while i < len(word):
-        if word[i].isdigit():
-            j = i
-            while j < len(word) and word[j].isdigit():
-                j += 1
-            integer = word[i:j].lstrip('0')  # Remove leading zeros
-            if integer not in seen_integers:
-                seen_integers.add(integer)
-                count += 1
-            i = j - 1  # Move the index to the end of the found integer
-        i += 1
-
-    return count
+        # If the current character is numeric, it's the start of a substring
+        if word[i].isnumeric():
+            # Move to the end of the current numeric substring
+            start = i
+            while i < len(word) and word[i].isnumeric():
+                i += 1
+            # Add the unique numeric substring (considering leading zeros)
+            unique_numbers.add(word[start:i].lstrip('0') or '0')
+        else:
+            # Move to the next character
+            i += 1
+    
+    # Return the count of unique numeric substrings
+    return len(unique_numbers)

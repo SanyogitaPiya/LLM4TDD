@@ -1,42 +1,26 @@
-from typing import List
-
 def code30(s: str, words: List[str]) -> List[int]:
-    if not s or not words:
-        return []
-
-    word_length = len(words[0])
-    total_length = len(words) * word_length
-    word_count = len(words)
-
-    word_occurrences = {}
-
-    for word in words:
-        if word in word_occurrences:
-            word_occurrences[word] += 1
-        else:
-            word_occurrences[word] = 1
-
     result = []
+    word_len = len(words[0])
+    total_words_len = word_len * len(words)
+    words_count = Counter(words)
 
-    for i in range(len(s) - total_length + 1):
-        seen = {}
-        for j in range(word_count):
-            start_index = i + j * word_length
-            end_index = start_index + word_length
-            current_word = s[start_index:end_index]
+    # Iterate through the string with a window of length equal to the word length
+    for i in range(word_len):
+        left, right, current_count = i, i, Counter()
 
-            if current_word not in word_occurrences:
-                break
+        # Move the right pointer to the end of the string
+        while right + word_len <= len(s):
+            current_word = s[right:right + word_len]
+            right += word_len
+            current_count[current_word] += 1
 
-            if current_word in seen:
-                seen[current_word] += 1
-            else:
-                seen[current_word] = 1
+            # Remove words from the left side until the substring is valid
+            while current_count[current_word] > words_count[current_word]:
+                current_count[s[left:left + word_len]] -= 1
+                left += word_len
 
-            if seen[current_word] > word_occurrences[current_word]:
-                break
-
-            if j == word_count - 1:
-                result.append(i)
+            # Check if the current substring is a valid concatenation of words
+            if right - left == total_words_len:
+                result.append(left)
 
     return result

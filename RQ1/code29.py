@@ -1,4 +1,4 @@
-def code29(d1: int, d2: int) -> int:
+def code187(d1: int, d2: int) -> int:
     if d2 == 0:
         raise ZeroDivisionError("Division by zero is not allowed")
 

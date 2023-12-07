@@ -1,7 +1,4 @@
-from typing import List
-
-class Solution:
-    def code(self, nums: List[int], quantity: List[int]) -> bool:
+def code(self, nums: List[int], quantity: List[int]) -> bool:
         # Sort quantity in reverse order
         quantity.sort(reverse=True)
 
