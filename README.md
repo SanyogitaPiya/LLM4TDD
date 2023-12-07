@@ -33,13 +33,13 @@ This research addresses number of research questions:
 or discussion group posts?
 - [RQ7] -How does ChatGPT’s performance differ for LeetCode problems before and after its knowledge cutoff? 
 
-   [RQ1]: <https://github.com/SanyogitaPiya/Test-Driven-Development-with-LLM/tree/main/RQ1>
-   [RQ2]: <https://github.com/SanyogitaPiya/Test-Driven-Development-with-LLM/tree/main/RQ2>
-   [RQ3]: <https://github.com/SanyogitaPiya/Test-Driven-Development-with-LLM/tree/main/RQ3>
-   [RQ4]: <https://github.com/SanyogitaPiya/Test-Driven-Development-with-LLM/tree/main/RQ4>
-   [RQ5]: <https://github.com/SanyogitaPiya/Test-Driven-Development-with-LLM/tree/main/RQ5>
-   [RQ6]: <https://github.com/SanyogitaPiya/Test-Driven-Development-with-LLM/tree/main/RQ6>
-   [RQ7]: <https://github.com/SanyogitaPiya/Test-Driven-Development-with-LLM/tree/main/RQ7>
+   [RQ1]: <https://github.com/SanyogitaPiya/LLM4TDD/tree/main/RQ1>
+   [RQ2]: <https://github.com/SanyogitaPiya/LLM4TDD/tree/main/RQ2>
+   [RQ3]: <https://github.com/SanyogitaPiya/LLM4TDD/tree/main/RQ3>
+   [RQ4]: <https://github.com/SanyogitaPiya/LLM4TDD/tree/main/RQ4>
+   [RQ5]: <https://github.com/SanyogitaPiya/LLM4TDD/tree/main/RQ5>
+   [RQ6]: <https://github.com/SanyogitaPiya/LLM4TDD/tree/main/RQ6>
+   [RQ7]: <https://github.com/SanyogitaPiya/LLM4TDD/tree/main/RQ7>
    [LeetCode]: <https://leetcode.com/>
    [Pynguin]: <https://www.pynguin.eu/>
    [GPT-3.5]:<https://platform.openai.com/docs/models>
