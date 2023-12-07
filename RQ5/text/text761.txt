@@ -1,0 +1,15 @@
+Test Case 1:
+
+Input: "10"
+Expected Output: "10"
+Explanation: The input string contains only a single special substring, which is "10". The expected output is also "10". This case tests the basic functionality of the code function when the input is a simple special substring.
+Test Case 2:
+
+Input: "11011000"
+Expected Output: "11100100"
+Explanation: The input string contains multiple special substrings, and the expected output is a modified version of the input where each "10" substring is replaced with "11" and each "01" substring is replaced with "00". This case tests how well the function handles a string with multiple special substrings.
+Test Case 3:
+
+Input: "11011000101100"
+Expected Output: "11100100110010"
+Explanation: Similar to Test Case 2, but with a more complex mix of special substrings. The function is expected to replace each "10" with "11" and each "01" with "00" in the input string. This case tests the robustness of the function when dealing with a variety of special substring patterns in the input.

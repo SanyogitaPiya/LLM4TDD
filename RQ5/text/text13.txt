@@ -1,0 +1,25 @@
+Test Roman Numeral "III":
+
+Input: "III"
+Expected Output: 3
+Assertion: The result of converting the Roman numeral "III" should be equal to 3.
+Test Roman Numeral "LVIII":
+
+Input: "LVIII"
+Expected Output: 58
+Assertion: The result of converting the Roman numeral "LVIII" should be equal to 58.
+Test Roman Numeral "MCMXCIV":
+
+Input: "MCMXCIV"
+Expected Output: 1994
+Assertion: The result of converting the Roman numeral "MCMXCIV" should be equal to 1994.
+Test Roman Numeral "IV":
+
+Input: "IV"
+Expected Output: 4
+Assertion: The result of converting the Roman numeral "IV" should be equal to 4.
+Test Roman Numeral "IX":
+
+Input: "IX"
+Expected Output: 9
+Assertion: The result of converting the Roman numeral "IX" should be equal to 9.

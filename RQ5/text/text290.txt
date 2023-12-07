@@ -1,0 +1,41 @@
+Pattern: "a"
+String: "apple"
+Expected Result: True
+Assertion: The result of applying the pattern "a" to the string "apple" should be True.
+Test Single Character Pattern with Multiple Words String:
+
+Pattern: "a"
+String: "dog cat fish"
+Expected Result: False
+Assertion: The result of applying the pattern "a" to the string "dog cat fish" should be False.
+Test Unique Characters Pattern with Matching Words String:
+
+Pattern: "abba"
+String: "dog cat cat dog"
+Expected Result: True
+Assertion: The result of applying the pattern "abba" to the string "dog cat cat dog" should be True.
+Test Unique Characters Pattern with Non-Matching Words String:
+
+Pattern: "abba"
+String: "dog cat cat fish"
+Expected Result: False
+Assertion: The result of applying the pattern "abba" to the string "dog cat cat fish" should be False.
+Test Repeated Characters Pattern with Matching Words String:
+
+Pattern: "aaaa"
+String: "dog cat cat dog"
+Expected Result: False
+Assertion: The result of applying the pattern "aaaa" to the string "dog cat cat dog" should be False.
+Test Repeated Characters Pattern with Non-Matching Words String:
+
+Pattern: "aaaa"
+String: "dog cat fish dog"
+Expected Result: False
+Assertion: The result of applying the pattern "aaaa" to the string "dog cat fish dog" should be False.
+Test Different Lengths Pattern and String:
+
+Pattern: "abc"
+String: "dog cat"
+Expected Result: False
+Assertion: The result of applying the pattern "abc" to the string "dog cat" should be False.
+ChatGPT

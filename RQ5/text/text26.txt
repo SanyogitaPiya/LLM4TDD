@@ -1,0 +1,25 @@
+Test Single Element Array:
+
+Input: [5]
+Expected Output: [5]
+Assertion: The result of code26([5]) should have a length equal to the length of the expected output, and each element should match.
+Test All Unique Elements:
+
+Input: [2, 4, 6, 8, 10]
+Expected Output: [2, 4, 6, 8, 10]
+Assertion: The result of code26([2, 4, 6, 8, 10]) should have a length equal to the length of the expected output, and each element should match.
+Test All Duplicate Elements:
+
+Input: [3, 3, 3, 3]
+Expected Output: [3]
+Assertion: The result of code26([3, 3, 3, 3]) should have a length equal to the length of the expected output, and each element should match.
+Test Duplicates at Beginning:
+
+Input: [2, 2, 3, 4, 5]
+Expected Output: [2, 3, 4, 5]
+Assertion: The result of code26([2, 2, 3, 4, 5]) should have a length equal to the length of the expected output, and each element should match.
+Test Duplicates at End:
+
+Input: [1, 2, 3, 4, 4]
+Expected Output: [1, 2, 3, 4]
+Assertion: The result of code26([1, 2, 3, 4, 4]) should have a length equal to the length of the expected output, and each element should match.

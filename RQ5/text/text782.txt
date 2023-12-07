@@ -1,0 +1,32 @@
+
+Test Description:
+
+Test 2x2 Chessboard:
+
+Description: This test evaluates the functionality of the movesToChessboard function with a 2x2 chessboard.
+Input Chessboard:
+lua
+Copy code
+[[0, 1],
+ [1, 0]]
+Expected Result: The expected result is 0, indicating that no moves are needed to convert the chessboard into a valid one.
+Test 3x3 Chessboard:
+
+Description: This test assesses the performance of the movesToChessboard function with a 3x3 chessboard.
+Input Chessboard:
+lua
+Copy code
+[[0, 1, 0],
+ [1, 0, 1],
+ [0, 1, 0]]
+Expected Result: The expected result is 0, indicating that no moves are required to transform the chessboard into a valid configuration.
+Test 4x4 Chessboard:
+
+Description: This test verifies the correctness of the movesToChessboard function with a 4x4 chessboard.
+Input Chessboard:
+lua
+Copy code
+[[1, 0, 1, 0],
+ [0, 1, 0, 1],
+ [1, 0, 1, 0],
+ [0, 1, 0, 1]]

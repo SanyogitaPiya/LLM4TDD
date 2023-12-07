@@ -1,0 +1,20 @@
+Test Single Node Tree:
+
+Input Tree: [1]
+Expected Output: 0
+Assertion: The result of processing a single-node tree [1] should be 0.
+Test Tree with a Single Left Leaf:
+
+Input Tree: [1, 2, None, 3, None, 4]
+Expected Output: 3
+Assertion: The result of processing a tree with a single left leaf [1, 2, None, 3, None, 4] should be 3.
+Test Tree with Multiple Left Leaves:
+
+Input Tree: [1, 2, 3, 4, None, 5, None, 6]
+Expected Output: 9
+Assertion: The result of processing a tree with multiple left leaves [1, 2, 3, 4, None, 5, None, 6] should be 9.
+Test Tree with Left Leaves at Different Depths:
+
+Input Tree: [1, 2, 3, None, 4, None, None, 5, None, 6]
+Expected Output: 15
+Assertion: The result of processing a tree with left leaves at different depths [1, 2, 3, None, 4, None, None, 5, None, 6] should be 15.

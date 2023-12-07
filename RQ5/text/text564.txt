@@ -1,0 +1,3 @@
+Input n = "123" output should be "121"
+Input n="1234" output should be "1221"
+Input n ="12345" output should be "12321"

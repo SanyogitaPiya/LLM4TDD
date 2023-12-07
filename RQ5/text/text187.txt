@@ -1,0 +1,35 @@
+Test Positive Dividend, Positive Divisor:
+
+Input: Dividend=10, Divisor=2
+Expected Output: 5
+Assertion: The result of dividing a positive dividend (10) by a positive divisor (2) should be 5.
+Test Positive Dividend, Negative Divisor:
+
+Input: Dividend=10, Divisor=-2
+Expected Output: -5
+Assertion: The result of dividing a positive dividend (10) by a negative divisor (-2) should be -5.
+Test Negative Dividend, Positive Divisor:
+
+Input: Dividend=-10, Divisor=2
+Expected Output: -5
+Assertion: The result of dividing a negative dividend (-10) by a positive divisor (2) should be -5.
+Test Negative Dividend, Negative Divisor:
+
+Input: Dividend=-10, Divisor=-2
+Expected Output: 5
+Assertion: The result of dividing a negative dividend (-10) by a negative divisor (-2) should be 5.
+Test Zero Dividend:
+
+Input: Dividend=0, Divisor=2
+Expected Output: 0
+Assertion: The result of dividing zero by a positive divisor (2) should be 0.
+Test Divide by Zero:
+
+Input: Dividend=10, Divisor=0
+Expected Output: Error (ZeroDivisionError)
+Assertion: Division by zero should raise a ZeroDivisionError.
+Test Divide by Zero (Negative Dividend):
+
+Input: Dividend=-15, Divisor=0
+Expected Output: Error (ZeroDivisionError)
+Assertion: Division by zero should raise a ZeroDivisionError.
