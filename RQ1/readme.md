@@ -1,5 +1,5 @@
 # RQ1: What is the performance of LLM4TDD
-**Conclusion: Among the 13 question selected. The following metric was found:
+**Conclusion: Among the 70 question selected. The following metric was found:
 | METRIC | NUMBER |
 | --- | --- |
 AVERAGE NUM OF PROMPTS| 8.014492754
