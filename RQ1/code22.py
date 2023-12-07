@@ -19,4 +19,3 @@ class YourClass:
         if right > left:
             self.generateParenthesis(current + ")", left, right - 1, result)
 
-

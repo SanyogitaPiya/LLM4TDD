@@ -1,15 +1,20 @@
-import unittest
+def code567_test_equal_lengths():
+    assert code567("abc", "def") == False
 
+def code567_test_lowercase_letters():
+    assert code567("abc", "def") == False
 
-def test_permutation(self):
-        self.assertTrue(self.solution.code567("abc", "bca"))
+def code567_test_uppercase_letters():
+    assert code567("ABC", "XYZ") == False
 
-def test_not_permutation(self):
-        self.assertFalse(self.solution.code567("abc", "def"))
+def code567_test_mixed_case_letters():
+    assert code567("abcXYZ", "def") == False
 
-def test_empty_strings(self):
-        self.assertTrue(self.solution.code567("", ""))
+def code567_test_contains_permutation():
+    assert code567("ab", "eidbaooo") == True
 
-def test_different_lengths(self):
-        self.assertFalse(self.solution.code567("abc", "abcd"))
+def code567_test_no_permutation():
+    assert code567("ab", "eidboaoo") == False
 
+def code567_test_common_characters():
+    assert code567("abc", "xyzabc") == True
